@@ -6,4 +6,9 @@ class LuxuryTax
     @name = "Luxury Tax"
     @purchased = nil
   end
+
+  def process(game, rolled = [])
+    game.current_player.cash -= 100
+    game.pot += 100
+  end
 end

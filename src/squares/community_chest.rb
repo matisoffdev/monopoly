@@ -6,4 +6,8 @@ class CommunityChest
     @name = "Community Chest"
     @purchased = nil
   end
+
+  def process(game, rolled = [])
+
+  end
 end

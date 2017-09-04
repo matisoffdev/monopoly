@@ -6,4 +6,8 @@ class Jail
     @name = "Jail"
     @purchased = nil
   end
+
+  def process(game, rolled = [])
+
+  end
 end

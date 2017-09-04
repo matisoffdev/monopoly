@@ -5,4 +5,8 @@ class Go
     @name = "Go"
     @purchased = nil
   end
+
+  def process(game, rolled = [])
+
+  end
 end

@@ -6,4 +6,8 @@ class Chance
     @name = "Chance"
     @purchased = nil
   end
+
+  def process(game, rolled = [])
+
+  end
 end
