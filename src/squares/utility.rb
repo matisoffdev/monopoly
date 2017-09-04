@@ -23,6 +23,6 @@ class Utility
   private
 
   def owns_both?
-    @owner.owned_properties.select{|property| property.class == Utility }.count
+    @owner.owned_properties.select{|property| property.class == Utility }.count == 2
   end
 end
