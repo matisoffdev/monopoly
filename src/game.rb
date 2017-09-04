@@ -47,7 +47,17 @@ class Game
 
       set_current_player(rolled)
     elsif action == "b"
+      puts "Which monopoly color would you like to buy houses for? (Full color name)"
 
+      color = gets.chomp
+
+      if @current_player.has_monopoly?(color)
+        puts "How many houses would you like to purchase?"
+
+        amount_of_houses = gets.chomp
+      else
+        puts "You do not have a monopoly on #{color}"
+      end
     elsif action == "m"
 
     end

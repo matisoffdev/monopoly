@@ -17,7 +17,7 @@ class Utility < PurchasableSquare
   def process(game, rolled = [])
     if @purchased == true && game.current_player != @owner
       puts "#{game.current_player.name} paid #{@owner.name} $#{rent(sum(rolled))}"
-      @current_player.cash -= rent(sum(rolled))
+      game.current_player.cash -= rent(sum(rolled))
       @owner.cash += rent(sum(rolled))
     elsif @purchased == false
       puts "Would you like to purchase this property? (y/n)"

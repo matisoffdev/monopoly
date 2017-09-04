@@ -21,4 +21,16 @@ class Player
       rolls: 0
     }
   end
+
+  def has_monopoly?(color)
+    owned_of_color = @owned_properties.select do |property|
+      property.is_a?(Property) && property.color == color
+    end
+
+    if ["Brown", "Dark Blue"].include?(color)
+      owned_of_color.count == 2
+    else
+      owned_of_color.count == 3
+    end
+  end
 end
